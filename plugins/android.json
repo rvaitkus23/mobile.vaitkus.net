@@ -9,6 +9,10 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"GAPlugin\"><param name=\"android-package\" value=\"com.adobe.plugins.GAPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"android-package\" value=\"com.phonegap.plugins.barcodescanner.BarcodeScanner\" /></feature>",
                             "count": 1
                         },
@@ -34,10 +38,6 @@
                         },
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"GAPlugin\"><param name=\"android-package\" value=\"com.adobe.plugins.GAPlugin\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -74,7 +74,7 @@
                     "/manifest": [
                         {
                             "xml": "<uses-permission android:name=\"android.permission.CAMERA\" />",
-                            "count": 4
+                            "count": 2
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.FLASHLIGHT\" />",
@@ -590,6 +590,9 @@
         }
     },
     "installed_plugins": {
+        "com.adobe.plugins.GAPlugin": {
+            "PACKAGE_NAME": "net.vaitkus.mobile"
+        },
         "com.phonegap.plugins.barcodescanner": {
             "PACKAGE_NAME": "net.vaitkus.mobile"
         },
@@ -605,13 +608,10 @@
         "org.apache.cordova.geolocation": {
             "PACKAGE_NAME": "net.vaitkus.mobile"
         },
-        "org.apache.cordova.statusbar": {
-            "PACKAGE_NAME": "net.vaitkus.mobile"
-        },
         "org.apache.cordova.inappbrowser": {
             "PACKAGE_NAME": "net.vaitkus.mobile"
         },
-        "com.adobe.plugins.GAPlugin": {
+        "org.apache.cordova.statusbar": {
             "PACKAGE_NAME": "net.vaitkus.mobile"
         }
     },
