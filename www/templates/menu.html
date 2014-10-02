@@ -1,0 +1,61 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <ion-content>
+      <div class="list">
+        <div class="item item-avatar">
+          <img src="img/profile-picture.jpg" />
+          <h2>Ricardas Vaitkus</h2>
+          <p>Front-end developer</p>
+        </div>
+        <div nav-clear menu-close class="item item-icon-right" ng-click="navigate('startpage')">
+          Start page
+          <i class="icon ion-ios7-paperplane-outline"></i>
+        </div>
+        <div nav-clear menu-close class="item item-icon-right" ng-click="navigate('about')">
+          About
+          <i class="icon ion-ios7-person-outline"></i>
+        </div>
+        <div nav-clear menu-close class="item" ng-click="navigate('features')">
+          Features
+          <span class="badge badge-energized">7</span>
+        </div>
+        <!--<div nav-clear menu-close class="item" ng-click="navigate('blog')">
+          Blog
+        </div>-->
+        <div nav-clear menu-close class="item item-icon-right" ng-click="navigate('contacts')">
+          Contacts
+          <i class="icon ion-ios7-telephone-outline"></i>
+        </div>
+      </div>
+    
+      <!--<ion-list>
+        <ion-item class="item-avatar" nav-clear menu-close>
+          Ricardas Vaitkus
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/search">
+          Start page
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/browse">
+          About
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/playlists">
+          Features
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/playlists">
+          Blog
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/playlists">
+          Contacts
+        </ion-item>-->
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

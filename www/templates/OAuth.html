@@ -1,0 +1,16 @@
+<ion-view title="OAuth">
+  <ion-content class="has-header">
+    <h3 class="padding text-center">Please choose provider to register with and I will tell you what I know about you</h3>
+    <h3 class="assertive">{{error}}</h3>
+    <div class="row">
+      <div class="button-center">
+        <button class="button icon ion-social-facebook" ng-click="fbLogin()"></button>
+        <!--<button class="button icon ion-social-googleplus" ng-click="gPlusLogin()"></button>-->
+      </div>
+    </div>
+    <div class="padding">
+      <img ng-show="showPicture" src="{{pictureUrl}}" />
+      {{output}}
+    </div>
+  </ion-content>
+</ion-view>

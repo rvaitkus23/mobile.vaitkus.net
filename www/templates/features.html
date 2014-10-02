@@ -1,0 +1,32 @@
+<ion-view title="Features">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content scroll="true" class="has-header">
+    <div class="card">
+      <div class="item item-text-wrap">
+        Hi,
+        
+        Let me tell what I know about you.
+        You are using {{device.model}} running {{device.platform}} {{device.version}}.
+        This is that I can find out if you are using my app, lets see that more can I do in mobile app.
+        Below is some features of mobile app I can implement.<br />
+        P.S. Flashlight might not work on all devices
+      </div>
+    </div>
+    
+    <div class="card" ng-repeat="card in cards">
+      <div class="item item-divider">
+        {{card.title}}
+      </div>
+      <div class="item item-text-wrap">
+        {{card.body}}  
+      </div>
+      <a class="item " ng-click="navigate(card.link)">
+        Try {{card.title}} sample
+      </a>
+    </div>
+    
+    <div style="height: 30px">&nbsp;</div>
+  </ion-content>
+</ion-view>
