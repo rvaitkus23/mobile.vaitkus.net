@@ -14,19 +14,19 @@ Quickly coded app to demonstrate that can be done using [Ionic framework](http:/
 
 ## Install
 
-After you check out this git repository you need to get dependencies installed. To do that you tu run command 
+After you check out this git repository you need to get dependencies installed. To do that you need to run command 
 
 ```bash
 $ npm install
 ```
 
-To update styles you need to run command 
+To update styles from scss files you need to run command 
 
 ```bash
 $ grunt sass
 ```
 
-If you want css files to be updated each time you upadte scss files you can leave leave running this command
+If you want css files to be updated each time you upadate scss files you can leave this command running 
 
 ```bash
 $ grunt watch
@@ -37,7 +37,7 @@ $ grunt watch
 To minify JavaScript and Css files you can do that by running this command
 
 ```bash
-$ grunt buld:release
+$ grunt build:release
 ```
 
 ### Development version
